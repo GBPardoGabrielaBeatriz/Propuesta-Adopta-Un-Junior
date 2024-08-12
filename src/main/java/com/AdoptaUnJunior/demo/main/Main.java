@@ -1,15 +1,9 @@
 package com.AdoptaUnJunior.demo.main;
-
 import com.AdoptaUnJunior.demo.modelo.DatosApi;
 import com.AdoptaUnJunior.demo.modelo.DatosLibro;
-import com.AdoptaUnJunior.demo.modelo.Libro;
-
 import com.AdoptaUnJunior.demo.service.ConsumoApi;
 import com.AdoptaUnJunior.demo.service.ConversorDatos;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.stereotype.Component;
-
 import java.util.Optional;
 import java.util.Scanner;
 @Component
@@ -20,11 +14,8 @@ public class Main {
     private static final String URL_BASE = "https://stephen-king-api.onrender.com/api/books";
     //private static final String URL_BASE="https://stephen-king-api.onrender.com/api/book/";
     private ConversorDatos conversor = new ConversorDatos();
-
     public Main() {
-
     }
-
     public void mostrarMenu(){
         System.out.println("Ingrese el nombre del libro que desea buscar");
         var tituloLibro=tipeo.nextLine();
