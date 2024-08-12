@@ -3,6 +3,8 @@ package com.AdoptaUnJunior.demo.modelo;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
 
+import java.util.List;
+
 @Entity
 @Table(name = "villanos")
 public class Villano {
@@ -14,4 +16,7 @@ public class Villano {
     @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "libro_id", referencedColumnName = "id")
     private Libro libro;
+
+
+
 }

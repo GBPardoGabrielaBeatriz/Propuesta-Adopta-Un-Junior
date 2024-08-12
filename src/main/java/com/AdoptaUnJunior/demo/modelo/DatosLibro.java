@@ -9,8 +9,7 @@ import java.util.List;
 public record DatosLibro(
         @JsonAlias("Year") Integer fechaLanzamiento,
         @JsonAlias("Title") String titulo,
-        @JsonAlias("Pages") int cantPaginas,
-        @JsonAlias("villains") List<DatosVillanos> villanos
+        @JsonAlias("Pages") int cantPaginas
 
 ) {
 }
