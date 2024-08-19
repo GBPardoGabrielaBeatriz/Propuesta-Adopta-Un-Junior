@@ -18,11 +18,25 @@ public class Libro {
     //@OneToMany(mappedBy = "libro", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     //private List<Villano> villanos;
 
+    public Libro() {
+    }
+
     public Libro(DatosLibro datos) {
         this.añoLanzamiento = datos.fechaLanzamiento();
         this.titulo = datos.titulo();
         this.cantPaginas = datos.cantPaginas();
     }
+
+    @Override
+    public String toString() {
+        return "Libro{" +
+                "id=" + id +
+                ", añoLanzamiento=" + añoLanzamiento +
+                ", titulo='" + titulo + '\'' +
+                ", cantPaginas=" + cantPaginas +
+                '}';
+    }
+
     public Libro(Optional<DatosLibro> libroBuscado) {
     }
     public Long getId() {
