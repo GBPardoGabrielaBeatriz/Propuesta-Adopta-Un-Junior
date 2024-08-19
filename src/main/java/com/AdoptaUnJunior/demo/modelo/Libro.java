@@ -10,13 +10,10 @@ public class Libro {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private int añoLanzamiento;
     @Column(unique = true)
     private String titulo;
+    private int añoLanzamiento;
     private int cantPaginas;
-
-    //@OneToMany(mappedBy = "libro", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-    //private List<Villano> villanos;
 
     public Libro() {
     }

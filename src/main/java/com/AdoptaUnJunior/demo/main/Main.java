@@ -25,15 +25,11 @@ public class Main {
         this.conversor = conversor;
     }
     public void mostrarMenu(){
+        System.out.println("************************\n Hola! Aca podras consultar toda la bibliografia de Stephen King .\nA continuacion elige una opcion de nuestro menu ...");
         var opcion = -1;
         while (opcion != 0) {
             var menu =
          """
-         ************************
-         Hola! Aca podras consultar toda la bibliografia de Stephen King.
-         A continuacion elige una opcion de nuestro menu ...
-        
-         
          ***********************
          1 - Buscar Libro
          2 - Mostrar libros buscados
@@ -70,13 +66,14 @@ public class Main {
             .filter(l -> l.titulo().toUpperCase().contains(nombreLibro.toUpperCase()))
             .findFirst();
 
+
         if(libroBuscado.isPresent()){
             DatosLibro datosLibro = libroBuscado.get();
             Libro libro = new Libro(datosLibro);
             libroRepository.save(libro);
             System.out.println("Aca lo encontramos! ");
 
-            System.out.println("+++++++++ LIBRO +++++++++" +
+            System.out.println("+++++++++ LIBRO +++++++++\n" +
                     "\nTítulo: " + datosLibro.titulo() +
                     "\nAño de lanzamiento: " + datosLibro.fechaLanzamiento() +
                     "\nCantidad de Paginas: " + datosLibro.cantPaginas()+
