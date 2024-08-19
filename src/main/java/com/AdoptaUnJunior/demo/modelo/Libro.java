@@ -27,6 +27,9 @@ public class Libro {
         this.cantPaginas = datos.cantPaginas();
     }
 
+    public Libro(DatosApi datos) {
+    }
+
     @Override
     public String toString() {
         return "Libro{" +
