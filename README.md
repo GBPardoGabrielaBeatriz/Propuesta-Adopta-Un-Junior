@@ -23,3 +23,7 @@ Aplicación que permite a los usuarios buscar y consultar toda la bibliografía 
 - MySQL (o la base de datos que estés usando)
 - Jackson para el mapeo JSON
 - Maven para la gestión de dependencias
+
+### Contribuciones recibidas :
+
+### Postulacion a los equipos de trabajo:
