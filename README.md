@@ -1,11 +1,12 @@
 
 ## Hola! :orange_heart:
 
-### <img src="https://raw.githubusercontent.com/alexnaiman/alexnaiman/master/resources/PusheenCompute.gif" width="70px" /> Actualmente estoy trabajando en : 
+### <img src="https://raw.githubusercontent.com/alexnaiman/alexnaiman/master/resources/PusheenCompute.gif" width="70px align="center" /> Actualmente estoy trabajando en : 
 ## ✨ Buscador de libros de Stephen King
- ...
+ 
+ <p align="center">
 <img alt="GIF" src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExMDh0eHhmOGdxam0zOHFpMjV6ZHR3bHByY28wMXM5eGY0dGZkbG1vbCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/j45rXOoCW623xFG3eT/giphy.webp" width = 200/>
-
+</p>
 ## Descripción del Proyecto
 Aplicación que permite a los usuarios buscar y consultar toda la bibliografía de Stephen King utilizando una API externa.
 
@@ -27,3 +28,9 @@ Aplicación que permite a los usuarios buscar y consultar toda la bibliografía 
 ### Contribuciones recibidas :
 
 ### Postulacion a los equipos de trabajo:
+Me gustaria ser parte de los equipos de trabajo ya que me siento capacitada para formar parte de tal desafio.
+Me encuentro en continuo aprendizaje del rol, ademas, tengo experiencia en trabajar con equipos de trabajo, afianzando las habilidades blandas en cada oportunidad, y aprendiendo a la par de cada situacion.+
+Obviamente no tengo todo el rol resuelto, esto es un largo camino, pero si puedo decir que tengo la disciplina y las ganas para enfrentar los siguientes pasos.
+<p align="center">
+<img alt="GIF" src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExNnBiaG1sNmI5dzVlMDg1dHZ4bWV2OG13djhoZm0zajk2Z2o2OG54YiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Ll37bXYmQecEdBpmmM/giphy.webp" width = 200/>
+</p>
