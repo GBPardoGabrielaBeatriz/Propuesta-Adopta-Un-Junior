@@ -1,7 +1,6 @@
 
 ## Hola! :orange_heart:
-
-### <img src="https://raw.githubusercontent.com/alexnaiman/alexnaiman/master/resources/PusheenCompute.gif" width="70px align="center" /> Actualmente estoy trabajando en : 
+Actualmente estoy trabajando en : 
 ## ✨ Buscador de libros de Stephen King
  
  <p align="center">
