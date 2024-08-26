@@ -33,6 +33,8 @@ public class Main {
          ***********************
          1 - Buscar Libro
          2 - Mostrar libros buscados
+         3 - Listar el libro con mayor cantidad de paginas
+         4 - Listar los villanos de cierto libro
                         
          0 - Salir
          """;
@@ -46,12 +48,25 @@ public class Main {
                 case 2:
                     mostrarLibrosBuscados();
                     break;
+                case 3 :
+                    mostrarLibroConMasPaginas();
+                    break;
+                case 4 :
+                    mostrarVillanos();
+                    break;
                 case 0:
                     System.out.println("Gracias! vuelva prontos!");
                     break;
                 default:
                     System.out.println("Opcion invalida");
             }}}
+
+    private void mostrarVillanos() {
+    }
+
+    private void mostrarLibroConMasPaginas() {
+    }
+
     private DatosApi getDatosLibro(String nombreLibro) {
      var json=consumoApi.obtenerDatos(URL_BASE );
      return  conversor.obtenerDatos(json, DatosApi.class);
