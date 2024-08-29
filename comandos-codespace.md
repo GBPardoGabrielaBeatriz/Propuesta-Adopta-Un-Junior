@@ -79,3 +79,9 @@ Añadimos: ~/start.sh
 source ~/.bashrc
 
 ----------------------------
+
+**Verifica que Docker esté corriendo:**
+docker ps
+
+**Puedes verificar que tu servicio MySQL está corriendo:**
+docker-compose ps
