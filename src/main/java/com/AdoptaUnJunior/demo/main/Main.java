@@ -71,6 +71,8 @@ public class Main {
      var json=consumoApi.obtenerDatos(URL_BASE );
      return  conversor.obtenerDatos(json, DatosApi.class);
         }
+
+
     private void buscarLibro() {
         System.out.println("Escribe el nombre del libro de Stephen King que deseas buscar");
         var nombreLibro = tipeo.nextLine();
@@ -84,10 +86,16 @@ public class Main {
 
         if(libroBuscado.isPresent()){
             DatosLibro datosLibro = libroBuscado.get();
-            Libro libro = new Libro(datosLibro);
-            libroRepository.save(libro);
-            System.out.println("Aca lo encontramos! ");
 
+            // Verificar si el libro ya existe en la base de datos
+            Optional<Libro> libroExistente = libroRepository.findByTituloContainsIgnoreCase(datosLibro.titulo());
+            if (libroExistente.isEmpty()) {
+                Libro libro = new Libro(datosLibro);
+                libroRepository.save(libro);
+                System.out.println("Aca lo encontramos! ");
+            } else {
+                System.out.println("El libro ya existe en la base de datos.");
+            }
             System.out.println("+++++++++ LIBRO +++++++++\n" +
                     "\nTítulo: " + datosLibro.titulo() +
                     "\nAño de lanzamiento: " + datosLibro.fechaLanzamiento() +
@@ -97,6 +105,22 @@ public class Main {
             System.out.println("Libro no encontrado");
         }
     }
+
+
     private void mostrarLibrosBuscados() {
+        Iterable<Libro> libros = libroRepository.findAll();
+        if (libros.iterator().hasNext()) {
+            System.out.println("+++++++++ LIBROS BUSCADOS +++++++++");
+            for (Libro libro : libros) {
+                System.out.println(
+                    "Título: " + libro.getTitulo() +
+                    "\nAño de lanzamiento: " + libro.getAñoLanzamiento() +
+                    "\nCantidad de Páginas: " + libro.getCantPaginas() + 
+                    "\n-----------------------------------"
+                );
+            }
+        } else {
+            System.out.println("No se han encontrado libros buscados.");
+        }
     }}
 
